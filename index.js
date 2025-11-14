@@ -118,7 +118,7 @@ mycard.addEventListener("click", (e) => {
 
     treecarddata.innerHTML += `
      <div 
-              class="cart-item flex justify-between items-center px-2 rounded-lg bg-green-100 my-2 gap-2"
+              class="cart-item flex overflow-hidden justify-between items-center px-2 rounded-lg bg-green-100 my-2 gap-2"
             >
               <div>
                 <h1>${name}</h1>
