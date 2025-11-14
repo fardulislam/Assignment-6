@@ -4,6 +4,9 @@ const treecarddata = document.getElementById("treecard");
 const centerdata = document.getElementById("mycard");
 let total = 0;
 const pricetotal = document.getElementById("totalprice");
+const modal = document.getElementById('my_modal_5');
+
+
 
 const catagories = () => {
   fetch("https://openapi.programming-hero.com/api/categories")
@@ -44,7 +47,7 @@ const showalltrees = (plants) => {
   mycard.innerHTML = "";
   plants.forEach((plants) => {
     mycard.innerHTML += `
-           <div class="overflow-hidden rounded-lg p-2 bg-white">
+           <div class="overflow-hidden object-fit rounded-lg p-2 bg-white">
               <img class="w-full object-cover   rounded-lg h-40" src=${plants.image} alt="">
               <div id="${plants.id}" class=" space-y-1 ">
                 <h1 class="font-semibold">${plants.name}</h1>
@@ -157,5 +160,8 @@ const showloading = () => {
             <h1 class="text-2xl font-semibold">Loading...</h1></div>
   `;
 };
+
+
+
 
 showalltreedata();
